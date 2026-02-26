@@ -1,16 +1,13 @@
-import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Component } from '@angular/core';
+import { ComponentaComponent } from './componenta/componenta.component';
+import { ComponentbComponent } from './componentb/componentb.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  standalone: true,
+  imports: [ComponentaComponent, ComponentbComponent],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
-//edited class to insert my name
 export class App {
-
-  name = "Boston";
-  age = 20;
-
 }
