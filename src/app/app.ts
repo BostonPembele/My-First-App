@@ -7,6 +7,10 @@ import { RouterOutlet } from '@angular/router';
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
+//edited class to insert my name
 export class App {
-  protected readonly title = signal('my-first-app');
+
+  name = "Boston";
+  age = 20;
+
 }
